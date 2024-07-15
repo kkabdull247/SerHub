@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Hub</title>
+  
+  </head>
+  
+  <body>
+    <header>
+      <marquee behavior="" direction="left">Welcome to Service Hub - Your trusted service provider ! Offering reliable
+        solutions for all your service needs. 50% OFF on your First Service / <a href="#services"
+          style="text-decoration: none; color: blue !important;">Our Services</a> / Join Us if you are looking for Job /
+        <a href="career.html" style="text-decoration: none; color: blue !important;">Careers</a> / The purpose of a free
+        consultation is to provide a potential client with information regarding the services that we provide. / <a
+          href="#contact" style="text-decoration: none; color: blue !important;">Free Consultation</a> /
+      </marquee>
+  
+      <div class="sub-header">
+        <div class="contact-info">
+          <p id="info-head">| <span style="color: rgb(47, 47, 204);">info@serviceshub.com</span></p>
+          <!-- <p>Phone: +123 456 7890</p> -->
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="header">
+        <a href="index.html" style="text-decoration: none; color: black; font-weight: bolder; font-style: italic;">
+          <div class="logo" style="color: white !important;"><img src="./brand4.png" alt=""
+              style="height: 50px; width: 120px; margin: 0%; padding: 0%; "></div>
+        </a>
+        <nav>
+          <a id="anchor" href="#home">Home</a>
+          <a id="anchor" href="#gallery">Gallery</a>
+          <a id="anchor" href="#services">Services</a>
+          <a id="anchor" href="#about">About</a>
+          <a id="anchor" href="#contact">Contact</a>
+          <a id="anchor" href="career.html">Careers</a>
+          <a id="anchor" href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="icons">
+          <a href="##" onclick="showCart()"><i class="fa fa-shopping-cart"></i></a>
+          <span class="cart-count">0</span>
+          <a href="login.html"><i class="fa fa-user"></i></a>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      </div>
+  
+      <div id="addToCartModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('addToCartModal')">&times;</span>
+          <p>Item added to cart!</p>
+        </div>
+      </div>
+  
+      <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('cartModal')">&times;</span>
+          <h2>Cart Items</h2>
+          <ul id="cartItems" class="cart-items"></ul>
+        </div>
+      </div>
+  
+  
+    </header>
+    
+
+    <section id="services" class="section">
+        <div class="container1">
+          <div class="service-heading">
+            <h2>Our Services</h2>
+          </div>
+    
+          <div id="sercontain">
+            <div class="card" style="background-image: url('doctor.jpg');">
+              <div class="card-overlay">
+                <h3 id="serh3">Doctor ⇑</h3>
+                <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                  excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                  quality, creativity, and client satisfaction. </p>
+                <div class="button-group">
+                  <a href="#" class="button addTC">Book Now</a>
+                  <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                    30px; margin-bottom: -5px; margin-left: 5px; " src="./icons8-whatsapp-100.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card" style="background-image: url('cleaner.jpg');">
+              <div class="card-overlay">
+                <h3>Cleaner ⇑</h3>
+                <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                  excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                  quality, creativity, and client satisfaction.</p>
+                <div class="button-group">
+                  <a href="#" class="button addTC">Book Now</a>
+                  <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                    30px; margin-bottom: -5px; margin-left: 5px;" src="./icons8-whatsapp-100.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card" style="background-image: url('Chef.jpg');">
+              <div class="card-overlay">
+                <h3>Chef - Cook ⇑</h3>
+                <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                  excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                  quality, creativity, and client satisfaction.</p>
+                <div class="button-group">
+                  <a href="#" class="button addTC">Book Now</a>
+                  <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                    30px; margin-bottom: -5px; margin-left: 5px;" src="./icons8-whatsapp-100.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card" style="background-image: url('driver.jpg');">
+              <div class="card-overlay">
+                <h3>Driver ⇑</h3>
+                <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                  excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                  quality, creativity, and client satisfaction.</p>
+                <div class="button-group">
+                  <a href="#" class="button addTC">Book Now</a>
+                  <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                    30px; margin-bottom: -5px; margin-left: 5px;" src="./icons8-whatsapp-100.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card" style="background-image: url('Painter.jpg');">
+              <div class="card-overlay">
+                <h3>Painter ⇑</h3>
+                <p id="paraSer"></p>Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                excellence of,  medical  care services transformative painting services all delivered with dedication to
+                quality,creativity, and client satisfaction.</p>
+                <div class="button-group">
+                  <a href="#" class="button addTC">Book Now</a>
+                  <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                    30px; margin-bottom: -5px; margin-left: 5px;" src="./icons8-whatsapp-100.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card" style="background-image: url('Barber.jpg');">
+              <div class="card-overlay">
+                <h3>Hair Dresser ⇑</h3>
+                <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                  excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                  quality, creativity, and client satisfaction.</p>
+                <div class="button-group">
+                  <a href="#" class="button addTC">Book Now</a>
+                  <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                    30px; margin-bottom: -5px; margin-left: 5px; " src="./icons8-whatsapp-100.png" alt=""></a>
+                </div>
+              </div>
+    
+            </div>
+            <div class="card" style="background-image: url('pexels-sarah-chai-7282818.jpg');">
+                <div class="card-overlay">
+                  <h3>Baby Sitter ⇑</h3>
+                  <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                    excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                    quality, creativity, and client satisfaction.</p>
+                  <div class="button-group">
+                    <a href="#" class="button addTC">Book Now</a>
+                    <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                      30px; margin-bottom: -5px; margin-left: 5px; " src="./icons8-whatsapp-100.png" alt=""></a>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="card" style="background-image: url('pexels-rdne-5591833.jpg');">
+                <div class="card-overlay">
+                  <h3>Maid ⇑</h3>
+                  <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                    excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                    quality, creativity, and client satisfaction.</p>
+                  <div class="button-group">
+                    <a href="#" class="button addTC">Book Now</a>
+                    <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                      30px; margin-bottom: -5px; margin-left: 5px; " src="./icons8-whatsapp-100.png" alt=""></a>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="card" style="background-image: url('pexels-mikhail-nilov-8942644.jpg');">
+                <div class="card-overlay">
+                  <h3>Ambulance 911 ⇑</h3>
+                  <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                    excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                    quality, creativity, and client satisfaction.</p>
+                  <div class="button-group">
+                    <a href="#" class="button addTC">Book Now</a>
+                    <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                      30px; margin-bottom: -5px; margin-left: 5px; " src="./icons8-whatsapp-100.png" alt=""></a>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="card" style="background-image: url('pexels-pixabay-69934.jpg');">
+                <div class="card-overlay">
+                  <h3>Fire Fighters ⇑</h3>
+                  <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                    excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                    quality, creativity, and client satisfaction.</p>
+                  <div class="button-group">
+                    <a href="#" class="button addTC">Book Now</a>
+                    <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                      30px; margin-bottom: -5px; margin-left: 5px; " src="./icons8-whatsapp-100.png" alt=""></a>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="card" style="background-image: url('pexels-sawibythepixels-1336926.jpg');">
+                <div class="card-overlay">
+                  <h3>Photographer / Videgrapher ⇑</h3>
+                  <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                    excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                    quality, creativity, and client satisfaction.</p>
+                  <div class="button-group">
+                    <a href="#" class="button addTC">Book Now</a>
+                    <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                      30px; margin-bottom: -5px; margin-left: 5px; " src="./icons8-whatsapp-100.png" alt=""></a>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="card" style="background-image: url('pexels-pixabay-38442.jpg');">
+                <div class="card-overlay">
+                  <h3>Security Guards ⇑</h3>
+                  <p id="paraSer">Offering reliable transportation, meticulous cleaning, personalized grooming, culinary
+                    excellence, expert medical care, and transformative painting services—all delivered with dedication to
+                    quality, creativity, and client satisfaction.</p>
+                  <div class="button-group">
+                    <a href="#" class="button addTC">Book Now</a>
+                    <a href="#" class="button btnWa">Call Now<img style="width: 30px; height:
+                      30px; margin-bottom: -5px; margin-left: 5px; " src="./icons8-whatsapp-100.png" alt=""></a>
+                  </div>
+                </div>
+      
+              </div>
+              
+            <br>
+            <!-- View More Button -->
+             <div class="view-more-button" style="text-align: center;">
+              <a href="services1.html" id="anc" class="btn1">View More Services</a>
+            </div> 
+            
+          </div>
+      </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Services Hub</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="sub-header">
+      <div class="contact-info">
+        <p>Email: info@serviceshub.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="header">
+      <div class="logo"><a href="index.html">Services Hub</a></div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="icons">
+        <a href="login.html"><i class="fa fa-user"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        <span class="cart-count">0</span>
+      </div>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+
+
+<div class="outer-div" style="background-image: url(./pexels-vardarious-3887985.jpg); background-size: contain;">
+  <!-- <div class="inner-img">
+    <img src="./Logo__2_-removebg-preview.png" height="300px" width="auto" alt="">
+<h2 class="text-light">
+  Where Commitment Meets Quality
+</h2>
+<p style="width: 30em;" class="text-light">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet ut culpa repellendus fugit id maiores. Dignissimos cum accusamus odio!
+</p>
+  </div> -->
+ <!-- form start -->
+ <div class="form-container">
+  <form>
+    <h2>Signup</h2>
+
+    <div class="input-outer">
+      <input type="text" class="input-field" id="fullname" />
+      <label for="Name" class="input-label">Name</label>
+      <p id="nameerror" class="error"></p>
+    </div>
+
+    <div class="input-outer">
+      <input type="email" id="email" class="input-field"  />
+      <label for="Email" class="input-label">Email</label>
+      <p id="emailerror" class="error"></p>
+    </div>
+
+    <div class="input-outer">
+      <input type="password" id="pass" class="input-field"  />
+      <label for="Password" class="input-label">Password</label>
+      <p id="passerror" class="error"></p>
+    </div>
+
+    <div class="input-outer">
+      <input type="text" id="cnic" class="input-field" />
+      <label for="CNIC" class="input-label">CNIC</label>
+      <p id="cnicerror" class="error"></p>
+    </div>
+
+  <div style="display: flex; gap: 1em">
+    <div>
+      <select id="countryCode" name="countryCode">
+        <option value="+1">+92</option>
+        <option value="+44">+44</option>
+        <option value="+91">+91</option>
+        <option value="+61">+61</option>
+        <option value="+81">+81</option>
+        <option value="+33">+33</option>
+        <option value="+49">+49</option>
+        <option value="+55">+55</option>
+        <option value="+7">+7</option>
+        <option value="+86">+86</option>
+        <option value="+92">+1</option>
+    </select>
+      <p id="numerror" class="error"></p>
+    </div>
+
+    <div class="input-outer">
+      <input type="text" id="phoneNumber" class="input-field" />
+      <label for="PhoneNumber" class="input-label">PhoneNumber</label>
+      
+    </div>
+  </div>
+
+  <div class="input-outer">
+    <input type="date" id="d-o-b" class="input-field" />
+    <!-- <label for="Name" class="input-label">Name</label> -->
+    <p id="cnicerror" class="error"></p>
+  </div>
+
+    <div style="display: flex; align-items: center; gap: 1em">
+      <div class="input-outer">
+        <input type="number" id="age" class="input-field"  />
+      <label for="Age" class="input-label">Age</label>
+        <p id="ageerror" class="error"></p>
+      </div>
+
+      <div>
+        <select id="gender">
+          <option value="Gender">Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="msg" class="error" style="padding-bottom: 0.5em; text-align: center;"></div>
+
+    <button type="button" id="signup-btn" >Sign Up</button>
+
+    <div class="switch-form">
+      <p style="font-weight: bold; border-top: 1px solid black; padding-top: 1em;" id="already">Already have an account? <a href="login.html" style="text-decoration: underline;">Login here</a></p>
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+   
+    
+    <script>
+
+let inputFields = document.querySelectorAll('.input-field');
+let inputLabels = document.querySelectorAll('.input-label');
+
+inputFields.forEach((inputField, index) => {
+  let inputLabel = inputLabels[index];
+
+  inputField.addEventListener('input', () => {
+    if (inputField.value !== '') {
+      inputLabel.style.top = '-3px';
+    } else {
+    inputLabel.style.top = '20px';
+    }
+  });
+
+  if (inputField.value !== '') {
+    inputLabel.style.top = '-3px';
+  } else {
+    inputLabel.style.top = '20px';
+  }
+});
+
+
+
+    </script>
+
+    <script src="signup.js"></script>
+  </body>
+</html>

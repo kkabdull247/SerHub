@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Services Hub</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="sub-header" >
+      <div class="contact-info">
+        <p>Email: info@serviceshub.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="header">
+      <a href="index.html"><div class="logo">Services Hub</div></a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="icons">
+        <a href="login.html"><i class="fa fa-user"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        <span class="cart-count">0</span>
+      </div>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="form-container" style="background-image: url(./pexels-vardarious-3887985.jpg); background-size: contain; width: 100% !important; height: 100vh !important;">
+      <form>
+        <h2>Login</h2>
+
+        <div>
+          <input type="email" id="form2Example1" placeholder="Email" />
+          <p id="emailerror" class="error"></p>
+
+        </div>
+
+        <div>
+            <input type="password" id="form2Example2" placeholder="Password" />
+          <p id="passerror" class="error"></p>
+        </div>
+
+        <div id="msg" class="error" style="padding-bottom: 0.5em; text-align: center;"></div>
+        <button  type="button" id="login-btn">Login</button>
+       
+        <div class="switch-form">
+            <p style="font-weight: bold; border-top: 1px solid black; padding-top: 1em;">Don't have an account? <a href="signup.html" style="text-decoration: underline;">Register</a></p>
+        </div>
+      </form>
+    </div>
+
+
+    <script src="login.js"></script>
+  </body>
+</html>

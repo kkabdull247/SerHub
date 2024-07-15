@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#contact {
+    width: 100%;
+}
+
+.map-container {
+    width: 100%;
+    height: 40vh;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.image-container, .form-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .image-container, .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+
+</style>
+<body>
+    <section id="contact">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093776!2d144.95373631550453!3d-37.816279179751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577ed7fc30c04f5!2sGoogle!5e0!3m2!1sen!2sau!4v1619995760610!5m2!1sen!2sau" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+        <div class="content-container">
+            <div class="image-container">
+                <img src="./Black and White Flat Illustrative Delivery Services Logo.png" alt="Contact Image">
+            </div>
+            <div class="form-container">
+                <h2 style="
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-style: oblique;
+      margin-bottom: 1em;
+    " id="contact">
+      Contact Us
+    </h2>
+    <form action="https://formsubmit.co/kkabdull98@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
